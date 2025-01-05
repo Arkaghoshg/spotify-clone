@@ -1,0 +1,405 @@
+
+body{
+  font-family: "Montserrat", serif;
+  margin: 0;
+  background-color: #000; /* Black background for all elements */
+  color: #fff; /* White text color for all elements */
+  overflow: hidden;
+}
+
+/* Add this specific rule for .nav */
+
+
+.main{
+
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar{
+  background-color: black;
+  width: 340px;
+  border-radius: 1rem;  /* 1rem = 16px*/
+  margin-right: 5px;
+}
+
+
+
+.main-content{
+
+  background-color: #121212;
+  flex:1;
+  /* it means allot the spaces to the divs and the entire space give to main-content div  */
+  border-radius: 1rem;  
+  overflow: auto;
+  margin-left: 5px;
+  padding: 0 1.5rem 0 1.5rem;
+  
+}
+
+.music-player{
+
+  background-color: black;
+  position : fixed;
+  bottom : 0px;
+  width: 100%;
+  height: 72px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav {
+  background-color: #121212; /* Red background for the .nav bar */
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  padding: 0.5 rem  0.75rem;
+}
+
+.nav-option{
+  line-height: 2.5rem;
+  opacity: 0.7;
+  padding : 0.5rem 0.75rem;
+  margin-bottom: 5px;
+}
+
+.nav-option:hover{
+  opacity: 1;
+}
+
+.nav-option i{
+  font-size: 1.25rem;
+}
+
+.nav-option a {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.library{
+  background-color: #121212;
+  border-radius: 1rem;
+  margin-top: 5px;
+  height: 100%;
+  padding : 0.5rem 0.75rem;
+}
+
+.option{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lib-option img{
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.icons{
+  font-size: 1.25rem;
+  opacity: 0.7;
+  margin-right: 1rem;
+  display: flex;
+}
+
+
+
+.icons i {
+  opacity: 0.7;
+  margin-right: 1rem;
+}
+
+.icons i:hover{
+  opacity: 1;
+}
+
+.box-1{
+  background-color: #232323;
+  height: 8rem;
+  
+  border-radius: 0.75rem;
+  margin: 0.75rem 1.75rem 1rem ;
+  padding: 0.75rem 1rem;
+}
+
+.box-2{
+  background-color: #232323;
+  height: 10rem;
+  
+  border-radius: 0.75rem;
+  margin: 0.75rem 1.75rem 1rem ;
+  padding: 0.75rem 1rem;
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box-p2{
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+.badge{
+  background-color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  margin-top:0.5rem;
+  height: 2rem;
+  width: fit-content;
+}
+
+.dark-badge{
+  background-color: #000;
+  color: #fff;
+}
+
+.sticky-nav{
+  position:sticky;
+  top: 0;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+ z-index: 10;
+}
+
+.sticky-nav-icons {
+  margin-left: 0.75rem;
+}
+
+.sticky-nav-options{
+
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .install-app-button {
+    display: flex;
+    align-items: center;
+  }
+
+  .install-app-button span {
+    display: none; /* Hide the text */
+  }
+
+  .install-app-button i {
+    margin-right: 0;
+  }
+}             
+
+
+.nav-item {
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 1000px){
+  .hide{
+    display: none;
+  }
+}
+
+.card{
+  background-color: #232323;
+  width: 150px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-img{
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.card-title{
+  font-weight: 600;
+}
+
+.card-info {
+  font-size: 0.85rem;
+  opacity: 0.5;
+}
+
+.footer{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line{
+  width: 90%;
+  height: 30%;
+  border-top: 1px solid white;
+  opacity: 0.4;
+}
+
+.music-player{
+  display: flex;
+  /* background-color: green; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.album{
+  width: 25%;
+  /* background-color: pink; */
+}
+
+.player{
+  width: 50%;
+  /* background-color: orange; */
+}
+
+.controls{
+  width: 25%;
+  /* background-color: yellow; */
+}
+
+.player-controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-control-icon{
+  height: 1rem;
+  margin-right: 1.75rem;
+  opacity: 0.7 ;
+}
+
+.player-control-icon:hover{
+  opacity: 1;
+}
+
+.playback-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar{
+  width: 70%;
+  appearance: none ;
+  background-color: transparent;
+  cursor: pointer;
+  
+}
+
+/* for styling the slider visit the website quirksmode.org */
+
+.progress-bar::-webkit-slider-runnable-track{
+  background-color: #ddd;
+  border-radius: 100px;
+  height: .2rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+
+.progress-bar::-webkit-slider-thumb:hover{
+  background-color: #1bd760;
+}
+
+
+
+.controls{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.control-icon{
+  height: 32px;
+  padding : 1px;
+  
+}
+
+.volume-bar {
+  appearance: none;
+  height: 4px;
+  border-radius: 100px;
+  width: 100px;
+  margin-left: 10px;
+  position: relative;
+  top: -13px;
+}
+
+.volume-bar::-webkit-slider-thumb {
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: green; /* Change the thumb color here */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+  .control-icon {
+    height: 24px; /* Adjust the size for smaller screens */
+  }
+}
+
+@media (max-width: 1110px) {
+  .control-icon {
+    height: 20px; /* Further adjust the size for very small screens */
+  }
+}
+
+@media (max-width: 1020px) {
+  .control-icon {
+    display: none;
+  }
+}
+
+.music {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+}
+
+.music-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px; /* Add space between the image and the text */
+}
+
+music-info{
+  display: flex;
+  flex-direction: column;
+}
+.title, .artist {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.artist{
+  font-weight: 10;
+}
+
+
